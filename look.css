@@ -1,0 +1,15 @@
+#gameBoard { width: 80%; margin: 0 auto; font-size: 16px}
+#left,#right { width: 50%; float: left}
+#player, #dealer { border: 1px solid black; height: 100px; width: 90%}
+#playerTotal { color: green}
+#dealerTotal { color: red}
+#console { width:90%; border: 1px dotted green; min-height: 20px; font-size: 1.2em; color: red }
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (max-width: 768px) {
+#left,#right { width: 100%; float: none}
+}

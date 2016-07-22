@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+<title>Blackjack</title>
+<link href="styles/look.css" rel="stylesheet" type="text/css" >
+</head>
+
+<body>
+<div id="gameBoard">
+<h1>Blackjack</h1>
+<p>Click buttons to play and follow prompts in console.</p>
+<div id="left" class="group">
+<h2>player</h2>
+<div id="player"></div>
+Player score: <span id="playerTotal"></span>
+<h2>dealer</h2>
+<div id="dealer"></div>
+Dealer score:  <span id="dealerTotal"></span>
+</div>
+<h2>console</h2>
+<div id="right" class="group"><p id="console"></p>
+<br />
+<br />
+<form action="get">
+ <button type="button" name="deal" id="deal" onClick="hit()">player deal</button> 
+ <button type="button" name="stick_dealer" id="stick_dealer" onClick="stick()">stick/dealer deal</button>	
+ <button type="button" name="new_game" id="new_game" onClick="initaliseGame()">new game</button> 
+</form></div>
+</div>
+<script src="js/game.js"></script>
+</body>
+</html>
